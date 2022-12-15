@@ -1,8 +1,8 @@
 # DirCreate2System
-Weaponizing to get NT SYSTEM for Privileged Directory Creation Bugs with Windows Error Reporting
+Weaponizing to get NT AUTHORITY\SYSTEM for Privileged Directory Creation Bugs with Windows Error Reporting
 
 ### Short Description:
-I've discovered **comctl32.dll** (which is missing in system dir which doesn't really exist) has been loaded by wermgr.exe via windows error reporting by running schtasks. It means if we can create a folder name as **C:\windows\system32\wermgr.exe.local** with Full permission ACL, we can hijack the **comctl32.dll** in that folders. Then, I created this poc as a Directory creation to NT SYSTEM method.
+I've discovered **comctl32.dll** (which is missing in system dir which doesn't really exist) has been loaded by wermgr.exe via windows error reporting by running schtasks. It means if we can create a folder name as **C:\windows\system32\wermgr.exe.local** with Full permission ACL, we can hijack the **comctl32.dll** in that folders. Then, I created this poc as a Directory creation to NT AUTHORITY\SYSTEM shell method.
 
 ### **POC video** 
 [POC.wmv](https://github.com/binderlabs/DirCreate2System/blob/main/poc.wmv) (with backblaze's directory creation bug)
