@@ -20,3 +20,8 @@ I've discovered **comctl32.dll** (which is missing in system dir which doesn't r
 
 #### *Note:*
 *You can also use another methods by viewing this* [dir_create2system.txt](https://github.com/sailay1996/awesome_windows_logical_bugs/blob/master/dir_create2system.txt)
+
+#### *How to detect this?: *
+* You can detect this by using the Sigma rule that's created by [@pbssubhash](https://twitter.com/pbssubhash). 
+
+Sigma Rule: [DirCreate2System detection](https://github.com/pbssubhash/sigma/blob/master/rules/windows/file/file_event/file_event_win_dircreate2system_privesc.yml)
